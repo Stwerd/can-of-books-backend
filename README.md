@@ -1,11 +1,37 @@
-# Start your own "Can of Books" App
+# Project Name
 
-This repository has starter code to begin work on creating your own online bookshelf.
+**Author**: Jackson Gurney, David Suy
+**Version**: 1.0.0
 
-## What can books do?
+## Overview
+READ book data by connecting your front-end React app to a back-end Express server. Your Express server will connect to a Mongo database. You will need to make a “schema” in your back-end code to model how you want your data to look. You will then populate your database with “seed” data—some of your favorite books. When the front end makes a request to your server, your server will query the database and respond with all of the results from the database. Your front end will display these results.
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+## Getting Started
+Sign up for mongo Atlas, connect the query from front end to back end, and import data from the mongo database.
 
-## Use this template
+## Architecture
+mongo,
+servers,
+react,
+js
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+## Change Log
+
+
+08/29/2022 - Copied template from the class github.
+
+## Estimates
+
+Name of feature: mongo database
+
+Estimate of time needed to complete: 3
+
+Start time: 2:30pm
+
+Finish time: N/A
+
+Actual time needed to complete: _____
+
+## Credit and Collaborations
+David Suy, Jackson Gurney
+
