@@ -1,7 +1,7 @@
 # Project Name
 
 **Author**: Jackson Gurney, David Suy
-**Version**: 1.0.0
+**Version**: 1.0
 
 ## Overview
 READ book data by connecting your front-end React app to a back-end Express server. Your Express server will connect to a Mongo database. You will need to make a “schema” in your back-end code to model how you want your data to look. You will then populate your database with “seed” data—some of your favorite books. When the front end makes a request to your server, your server will query the database and respond with all of the results from the database. Your front end will display these results.
@@ -19,6 +19,7 @@ js
 
 
 08/29/2022 - Copied template from the class github.
+08/29/2022 - Completed todays work to trello standard, working requests to mongo server
 
 ## Estimates
 
@@ -28,9 +29,9 @@ Estimate of time needed to complete: 3
 
 Start time: 2:30pm
 
-Finish time: N/A
+Finish time: 4:00pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hour 30 minutes
 
 ## Credit and Collaborations
 David Suy, Jackson Gurney
