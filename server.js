@@ -18,6 +18,7 @@ mongoose.connect(process.env.DB_URL);
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 3002;
 
@@ -29,10 +30,13 @@ app.get('/', (request, response) => {
 
 app.get('/books', getBooks);
 
+app.post('/books', postBook);
+
 
 app.get('*', (request, response) => {
   response.send(' 404 Not Found. These are not the droids you\'re looking for.');
 });
+
 
 app.use((error, request, response, next) =>{
   response.status(500).send(error.message);
@@ -45,6 +49,17 @@ async function getBooks(req, res, next) {
     res.status(200).send(results);
   }
   catch(err){
+    next(err);
+  }
+}
+
+async function postBook(req, res, next){
+  console.log(req.body);
+  try{
+    let newBook = await Book.create(req.body);
+    console.log(newBook);
+    res.status(200).send(newBook);
+  }catch(err){
     next(err);
   }
 }
