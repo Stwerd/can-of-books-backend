@@ -32,6 +32,8 @@ app.post("/books", postBook);
 
 app.delete("/books/:id", deleteBook);
 
+app.put("/books/:id", putBook);
+
 app.get("*", (request, response) => {
   response.send(" 404 Not Found. These are not the droids you're looking for.");
 });
@@ -62,6 +64,24 @@ async function postBook(req, res, next) {
   try {
     let newBook = await Book.create(req.body);
     res.status(200).send(newBook);
+  } catch (err) {
+    next(err);
+  }
+}
+
+async function putBook(req, res, next) {
+  try {
+    let id = req.params.id;
+    let result = await Book.findByIdAndUpdate(id, req.body, {
+      new: true,
+      overwrite: true,
+    });
+
+    console.log(result);
+    // console.log(req.params);
+    // console.log(req.body);
+
+    res.status(200).send(result);
   } catch (err) {
     next(err);
   }
