@@ -57,9 +57,22 @@ Start time: 1700
 
 Finish time: 1800
 
+
+Actual time needed to complete: 1 hours
+----------
+
+Name of feature: Add change book feature
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1400
+
+Finish time: 1500
+
 Actual time needed to complete: 1 hours
 
 ----------
+
 
 ## Credit and Collaborations
 
